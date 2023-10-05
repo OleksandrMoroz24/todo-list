@@ -19,4 +19,4 @@ class Task(models.Model):
         return self.content
 
     class Meta:
-        ordering = ["datetime", "status"]
+        ordering = ["status", "datetime"]
