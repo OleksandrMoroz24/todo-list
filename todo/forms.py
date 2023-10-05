@@ -1,6 +1,6 @@
 from django import forms
 
-from models import Task, Tag
+from todo.models import Task, Tag
 
 
 class TaskForm(forms.ModelForm):
@@ -11,7 +11,7 @@ class TaskForm(forms.ModelForm):
 
     class Meta:
         model = Task
-        fields = ["content", "datetime", "deadline", "status", "tags"]
+        fields = ["content", "deadline", "status", "tags"]
 
 
 class TagForm(forms.ModelForm):
